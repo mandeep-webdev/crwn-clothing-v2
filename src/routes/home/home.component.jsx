@@ -1,6 +1,6 @@
 import DirectoryMenu from '../../components/Directory/directory.component';
 
-function Home() {
+const Home = () => {
   const categories = [
     {
       id: 1,
@@ -30,6 +30,6 @@ function Home() {
   ];
 
   return <DirectoryMenu categories={categories} />;
-}
+};
 
 export default Home;
