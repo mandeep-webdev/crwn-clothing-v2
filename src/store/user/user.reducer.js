@@ -1,4 +1,5 @@
 import USER_ACTION_TYPES from './user.types';
+
 export const USER_INITIAL_STATE = {
   currentUser: null,
 };
