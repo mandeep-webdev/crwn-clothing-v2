@@ -56,9 +56,10 @@ export const CartProvider = ({ children }) => {
   const [cartTotal, setCartTotal] = useState(0);
 
   useEffect(() => {
+    // reduce( (accum, currentValue) => {}) here accum is initial value...
     const newCartCount = cartItems.reduce(
       (total, cartItem) => total + cartItem.quantity,
-      0
+      0 // here 0 is an initial value for accumulator
     );
     setCartCount(newCartCount);
   }, [cartItems]);
