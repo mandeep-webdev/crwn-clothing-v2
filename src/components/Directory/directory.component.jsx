@@ -1,14 +1,15 @@
-import CategoryItem from '../category-preview/category-preview.component';
+import DirectoryItem from '../directory-item/directory-item.component';
+
 import './directory.styles.scss';
 
-const DirectoryMenu = ({ categories }) => {
+const Directory = ({ categories }) => {
   return (
     <div className="directory-container">
       {categories.map((category) => (
-        <CategoryItem key={category.id} category={category}></CategoryItem>
+        <DirectoryItem key={category.id} category={category} />
       ))}
     </div>
   );
 };
 
-export default DirectoryMenu;
+export default Directory;
