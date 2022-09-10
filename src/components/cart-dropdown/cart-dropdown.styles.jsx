@@ -16,6 +16,8 @@ export const CartDropdownContainer = styled.div`
   z-index: 5;
   ${Button} {
     margin-top: auto;
+    font-family: 'Open Sans Condensed';
+    font-size: 12px;
   }
 `;
 
