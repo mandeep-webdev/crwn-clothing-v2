@@ -4,11 +4,11 @@ import storage from 'redux-persist/lib/storage';
 import logger from 'redux-logger';
 
 import { rootReducer } from './root-reducer';
-
+export type RootState = ReturnType<typeof rootReducer>;
 const persistConfig = {
   key: 'root',
   storage,
-  blacklist: ['user'],
+  whitelist: ['cart'],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
